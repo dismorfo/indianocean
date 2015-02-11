@@ -1,0 +1,55 @@
+{
+    "partners" : [
+      {
+        "id" : "fales",
+        "name" : "Fales Library and Special Collections",
+        "logo" : "",
+        "url" : "http://www.nyu.edu/library/bobst/research/fales/"            
+      },
+      {
+        "id" : "dlts",
+        "name" : "DIGITAL LIBRARY TECHNOLOGY SERVICES",
+        "logo" : "",
+        "url" : "http://www.nyu.edu/"      
+      }
+    ],
+    "subjects" : {
+      "en" : {
+        "title" : "Filter by subject",
+        "sourceType" : "json",
+        "source" : "source/json/datasources/subject.json"
+      }
+    },
+    "featuredSubjects" : {
+      "en" : {
+        "title" : "Featured Subjects",
+        "sourceType" : "local",
+        "data": [
+            {
+                "tid" : "hadith",
+                "term" : "Hadith-- Dictionaries"
+            },
+            {
+                "tid" : "arabic_language",
+                "term" : "Arabic language-- Dictionaries"
+            },
+            {
+                "tid" : "homer",
+                "term" : "Homer"
+            },
+            {
+                "tid" : "bustani",
+                "term" : "Bustānī"
+            }                          
+        ]
+      }
+    },
+
+    "recentlyAddedTitles" : {
+      "en" : {
+        "title" : "Recently Added Titles",
+        "sourceType" : "json",
+        "source" : "source/json/datasources/recentlyAddedTitles.json"
+      }
+  }
+}
