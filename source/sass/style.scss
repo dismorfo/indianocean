@@ -23,10 +23,6 @@
 
 
 
-
-//@import "bootstrap/pager";
-//@import "bootstrap/labels";
-//@import "bootstrap/badges";
 //@import "bootstrap/jumbotron";
 //@import "bootstrap/thumbnails";
 //@import "bootstrap/alerts";
@@ -83,58 +79,7 @@ body {
 }
 
 .front {
-    [role="tablist"] {
-        @include box-shadow(inset 0px -1px 0px 0px rgba(110, 102, 93, 0.3));
-        margin-bottom: 10px;
-        .yui3-tab-label {
-            display: none;
-        }
-        .yui3-tab {
-            margin-right: 40px;
-            h3 {
-                margin: 0;
-                a {
-                    transition: all 0.5s;
-                    display: block;
-                    // border-bottom: 3px solid transparent;
-                    padding: 10px 0px 4px;
-                    font-weight: 400;
-                    color: #555;
-                    font-size: .8em;
-                    letter-spacing: .3px;
-                    text-transform: uppercase;
-                    &:hover {
-                        text-decoration: none;
-                        @include box-shadow(inset 0px -4px 0px 0px #ff9c00);
-                    }
-                }
-            }
-        }
-        .yui3-tab-selected {
-            // margin-bottom: -3px;
-            // @include box-shadow(rgba(#666, 0.3) 1px 1px 1px);
-            // @include box-shadow(rgba(#EAAE2C, 0.3) -1px 0px 1px);
-            h3 a {
-                // background-color: #f9f1e7;
-                // color: #555;
-                // border-top: 1px solid orange;
-                //  border-left: 1px solid orange;
-                //border-bottom: 3px solid orange;
-                box-shadow: inset 0px -4px 0px 0px #ff9c00;
-                // padding: 20px 20px 23px;
-                &:hover {
-                    text-decoration: none;
-                    // background-color: #ECE2D6;
-                    //border-bottom: 3px solid orange;
-                    box-shadow: inset 0px -4px 0px 0px orange;
-                }
-                &:hover, &:focus {
-                    text-decoration: none;
-                    background-color: #f9f1e7;
-                }
-            }
-        }
-    }
+    
     .intro {
         font-size: 1.3rem;
         line-height: 1.5;
@@ -142,12 +87,7 @@ body {
         margin: 1rem 0 0rem 0;
         max-width: 46em;
     }
-    .featured h3 {
-        padding: 40px 0 0;
-        margin-bottom: 30px;
-        border-bottom: 2px solid orange;
-    }
-    
+   
     .topHold {
         // background-color: blue;
         .newsitem {
