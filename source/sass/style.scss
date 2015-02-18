@@ -2,54 +2,31 @@
 
 // Core variables and mixins
 @import "bootstrap/variables";
-@import "bootstrap-variables";
+@import "partials/bootstrap-variables";
 @import "bootstrap/mixins";
 
 // Reset and dependencies
 @import "bootstrap/normalize";
-@import "bootstrap/print";
 
+//@import "bootstrap/print";
 
 // Core CSS
 @import "bootstrap/scaffolding";
 
-
-
 // Components
 @import "bootstrap/component-animations";
 
-@import "bootstrap/navs";
-@import "aconavbar";
+@import "partials/aconavbar";
 
-
-
-//@import "bootstrap/jumbotron";
-//@import "bootstrap/thumbnails";
-//@import "bootstrap/alerts";
-//@import "bootstrap/progress-bars";
-//@import "bootstrap/media";
-//@import "bootstrap/list-group";
-//@import "bootstrap/panels";
-//@import "bootstrap/responsive-embed";
-//@import "bootstrap/wells";
-//@import "bootstrap/close";
-
-// Components w/ JavaScript
-//@import "bootstrap/modals";
-//@import "bootstrap/tooltip";
-//@import "bootstrap/popovers";
-//@import "bootstrap/carousel";
-
-// Utility classes
-//@import "bootstrap/utilities";
-//@import "bootstrap/responsive-utilities";
+@import "partials/header";
+@import "partials/search";
 
 /*  End Bootstrap */
 /*  ********************* */
 /*  ********************* */
 /*  ********************* */
 /*  ********************* */
-/*  Start ACO Styles */
+/*  Start Indian Ocean Styles */
 
 //@import "compass";
 //@import "compass/css3/images";
@@ -79,7 +56,6 @@ body {
 }
 
 .front {
-    
     .intro {
         font-size: 1.3rem;
         line-height: 1.5;
@@ -87,24 +63,12 @@ body {
         margin: 1rem 0 0rem 0;
         max-width: 46em;
     }
-   
-    .topHold {
-        // background-color: blue;
-        .newsitem {
-            background-color: #ECE2D6;
-            border: double 3px gold;
-            padding: 20px;
-            h3 {
-                margin: 0;
-                padding: 0;
-            }
-        }
-    }
 }
 
 .filters {
-    margin-top: -20px;
-    margin-bottom: 10px;
+    // margin-top: -20px;
+    // margin-bottom: 10px;
+    float: left;
 }
 
 .flex-container {
@@ -147,45 +111,48 @@ body {
             font-family: "Open Sans";
             font-size: .8em;
         }
-       
         .md_title {
             font-size: 1.1em;
             line-height: 1.2;
             font-family: $font-family-serif, serif;
             margin: 0;
-            padding: 0 0 3px 0;
+            padding: 0 0 5px 0;
             a, a:link, a:visited {
                 font-weight: normal;
                 color: black;
                 display: block;
             }
-            
         }
-        .md_author {
+        .md_authors {
             font-size: 1rem;
             color: #666;
             line-height: 1.1;
             margin-bottom: .5em;
         }
-        .md_subjects {
-            // background-color: #ccc;
-            .md_subject:link, .md_subject:visited {
-                display: inline-block;
-                margin-right: 5px;
-                font-weight: normal;
-                font-family: $font-family-sans-serif;
-                font-size: .9rem;
-                color: $brand-primary;
-                &:hover {
-                    color: lighten($brand-primary, 7%);
-                }
-                &::after {
-                    content: ",";
-                }
+        .md_author {
+            &::after {
+                content: ",\00a0";
             }
-            .md_subject:last-child::after {
+            &:last-child::after {
                 content: "";
             }
+        }
+        .md_subject:link, .md_subject:visited {
+            display: inline-block;
+            margin-right: 5px;
+            font-weight: normal;
+            font-family: $font-family-sans-serif;
+            font-size: .9rem;
+            color: $brand-primary;
+            &:hover {
+                color: lighten($brand-primary, 7%);
+            }
+            &::after {
+                content: ",";
+            }
+        }
+        .md_subject:last-child::after {
+            content: "";
         }
         .md_provider {}
         .thumbs {
@@ -241,35 +208,22 @@ body {
 
 .card {
     /* wrapper and inner padding to respect an IE 10 flexbox / box-sizing bug */
-    padding: 8px;
+    padding: 8px 12px 8px 8px;
 }
 
 .item-list {
     margin-top: 30px;
 }
 
-.header-nav {
-    float: right;
-    margin: 0;
-    li {
-        display: inline-block;
-        a:link, a:hover, a:visited {
-            color: white;
-            text-transform: uppercase;
-            font-size: .9em;
-            padding-left: 10px;
-            margin-left: 10px;
-        }
-        a {
-            border-left: 1px solid white;
-        }
-        &:first-child a {
-            border: none;
-        }
-    }
-}
-
 main {
+    min-height: 400px;
+    padding: 2em 0 4em;
+    @media (max-width: $grid-float-breakpoint) {
+        padding: 0 0 4em;
+    }
+    .maintext {
+        max-width: 50em;
+    }
     a:link, a:focus {
         font-weight: bold;
     }
@@ -293,6 +247,9 @@ main {
         font-weight: 300;
         text-shadow: 0px 0px 1px white;
         margin-top: 0;
+        @media (max-width: $grid-float-breakpoint) {
+            font-size: 1.4rem;
+        }
     }
     h3 {
         font-size: 1.3rem;
@@ -312,337 +269,11 @@ main {
     }
 }
 
-.header-wrapper {
-    background-color: $brand-primary;
-    color: #fff;
-    @include box-shadow(0px 0px 10px 5px rgba(110, 102, 93, 0.3));
-    @include box-shadow(0px 0px 10px 5px #deccbf);
-    width: 100%;
-    overflow: auto;
-}
-
-.header-main {
-    padding-top: 10px;
-    padding-bottom: 20px;
-    width: 100%;
-    @media (max-width: 479px) {
-        // font-size: 1.1rem;
-        padding-top: 0;
-    }
-    .sitename {
-        width: 80%;
-        max-width: 550px;
-        float: left;
-        margin: 0;
-        line-height: 1;
-        padding-top: 15px;
-        font-weight: normal;
-        letter-spacing:1px;
-        a {
-            height: 25px;
-            // text-indent: -1000em;
-            text-transform: uppercase;
-            color: #fff;
-            line-height: 1;
-            display: block;
-            // background: url("../images/awdl_logo.png") no-repeat left center;
-            // background-size: 100% auto;
-            @media (min-width: $grid-float-breakpoint) {
-                // background: url("../images/awdl_logo.png") no-repeat left top;
-                // background-size: auto;
-            }
-            @media (max-width: 479px) {
-                // background: url("../images/awdllogoVert.png") no-repeat left top;
-                // background-size: auto 100%;
-                padding-top: 0;
-                height: 40px;
-            }
-        }
-        a:hover {
-            text-decoration: none;
-            text-shadow: 1px 0px 0px #FF9C00, -1px 0px 0px #FF9C00, 0px 1px 0px #FF9C00, 0px -1px 0px #FF9C00;
-            text-shadow: 0px 0px 1px #fff, 1px 0px 0px #FF9C00;
-            // text-shadow: 1px 0px 0px #0000ff, -1px 0px 0px #FF9C00, 0px 1px 0px #0000ff, 0px -1px 0px #FF9C00;
-       
-        }
-    }
-}
-
-body.about .maintext {
-    max-width: 65em;
-}
-
-[role="search"] {
-    input[type="submit"] {
-        text-align: center;
-        background: #ecdcc8 url(../images/search-icon-2x.png) no-repeat center center;
-        background-size: auto 80%;
-        text-indent: -1000em;
-        border: 1px solid $brand-secondary3;
-        min-width: 2em;
-    }
-    input[type="text"] {
-        padding-left: 15px;
-        border: 1px solid $brand-secondary2;
-    }
-}
-
-nav.navbar.navbar-default {
-    border: 0;
-    // overridding bootstrap
-    //   border-bottom: 1px solid $brand-primary;
-    border-bottom: 1px solid #DECCBF;
-    li > a {
-        font-size: .9em;
-        line-height: 1.5;
-        font-family: $font-family-sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        transition: all .4s;
-    }
-    .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-        background-color: transparent;
-        color: #FF9C00;
-        @include box-shadow(inset 0px -4px 0px 0px #ff9c00);
-    }
-    @media (min-width: $grid-float-breakpoint) {
-        // full size
-        margin-top: 0;
-        @include box-shadow(0px 0px 16px 0px rgba(110, 102, 93, 0.3));
-        .nav > li:first-child > a {
-            padding-left: 0;
-        }
-        body.browse & a.browse, body.about & a.about {
-            // @include box-shadow(inset 0px -4px 0px 0px #D7CFC6);
-            @include box-shadow(none);
-            cursor: default;
-            color: #555;
-            &:hover {
-                color: #777;
-            }
-        }
-    }
-    @media (max-width: $grid-float-breakpoint-max) {
-        // mobile-friendly dropdown
-        border-bottom: none;
-        min-height: 0;
-        .container-fluid {
-            overflow: visible;
-            // we want the hover state to extend to edges of screen
-            padding: 0;
-        }
-        .navbar-toggle {
-            border: none;
-            padding: 20px 20px 0px 20px;
-            margin-top: -60px;
-            margin-bottom: 0px;
-            background-color: transparent;
-            rect {
-                fill: #aaaaaa;
-            }
-            &.collapsed {
-                rect {
-                    fill: white;
-                }
-            }
-            &:hover {
-                rect {
-                    fill: orange;
-                }
-            }
-        }
-        .navbar-collapse {
-            border: none;
-            clear: right;
-            .nav > li > a {
-                padding: 15px 20px;
-                text-align: right;
-                border-bottom: 1px solid $navbar-default-link-hover-bg;
-            }
-        }
-    }
-}
-
-.search_holder {
-    border: none;
-    @media (max-width: $grid-float-breakpoint-max) {
-        // mobile-friendly dropdown nav
-        padding: 10px 20px;
-        @include clearfix;
-        input[type="text"] {
-            width: 82%;
-            padding-left: 10px;
-            padding-right: 10px;
-            border: 1px solid $brand-secondary3;
-            height: 29px;
-            float: right;
-        }
-        input[type="submit"] {
-            width: 2em;
-            padding-left: 0;
-            padding-right: 0;
-            float: right;
-        }
-    }
-    @media (min-width: $grid-float-breakpoint) {
-        input[type="text"] {
-            width: 300px;
-            float: right;
-            height: 35px;
-            border-top: 1px solid $brand-secondary2;
-            border-left: 1px solid $brand-secondary2;
-            border-bottom: 1px solid $brand-secondary2;
-            border-right: none;
-            -moz-border-radius: 0px;
-            -webkit-border-radius: 0px;
-            -khtml-border-radius: 0px;
-            border-radius: 10% / 100%;
-            // compass mixin does not work with percentages?
-            //  @include border-radius(10% / 100%);
-            border-top-right-radius: 0em;
-            border-bottom-right-radius: 0em;
-            font-size: 1em;
-            margin-right: 0px;
-            color: #333;
-            // @include box-shadow(0px 0px 25px #fcf4ea, inset 0px 1px 1px rgba(0, 0, 0, 0.2));
-            @include box-shadow(inset 0px 1px 1px rgba(0, 0, 0, 0.2));
-        }
-        input[type="submit"] {
-            -webkit-transition: background .7s;
-            transition: background .7s;
-            float: right;
-            margin: 0px;
-            padding: 1px 5px;
-            height: 35px;
-            width: 50px;
-            font-weight: normal;
-            font-size: 1.1em;
-            line-height: 1;
-            letter-spacing: .025em;
-            text-shadow: #3f2706 1px 1px 2px;
-            border-radius: 20px / 30px;
-            border-top-left-radius: 0em;
-            border-bottom-left-radius: 0px;
-            @include box-shadow(inset 0px 1px 1px rgba(0, 0, 0, 0.2));
-            /*  box-shadow: none;*/
-            text-indent: -1000em;
-            border-top: 1px solid $brand-secondary2;
-            border-right: 1px solid $brand-secondary2;
-            border-bottom: 1px solid $brand-secondary2;
-            border-left: none;
-        }
-    }
-}
-
-ul.resources {
-    background-color: green;
-    padding-left: 0px;
-    padding-right: 0px;
-    list-style-type: none;
-    margin-top: .5rem;
-    li {
-        margin-top: 1.5rem;
-        &:first-child {
-            margin-top: 0em;
-        }
-    }
-    h3 {
-        font-size: 1em;
-        font-size: 1.1rem;
-        font-weight: bold;
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 1.4rem;
-    }
-    .link {
-        margin-bottom: .3em;
-        margin-bottom: .3rem;
-        color: #555;
-        font-size: .9rem;
-    }
-    .r-desc {
-        line-height: 1.3;
-    }
-}
-
-.footer-wrapper {
-    background-color: $footer-color;
-}
-
-.footer-main {
-    margin: 0px auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    // clear internal floats
-    width: 100%;
-    overflow: hidden;
-    .partner-wrapper {
-        text-align: center;
-        @media (min-width: $grid-float-breakpoint) {
-            text-align: right;
-        }
-        a {
-            display: block;
-            color: white;
-            text-transform: uppercase;
-            font-weight: 400;
-            letter-spacing: 1px;
-            font-size: 11px;
-            @media (min-width: $grid-float-breakpoint) {
-                font-size: 13px;
-            }
-            &:hover {
-                color: white;
-                text-decoration: underline;
-            }
-        }
-    }
-    .logo {
-        margin-bottom: 10px;
-        @media (min-width: $grid-float-breakpoint) {
-            float: left;
-            margin-bottom: 0px;
-        }
-        text-align: center;
-        line-height: 1;
-        width: auto;
-        height: 41px;
-        a {
-            display: block;
-            width: auto;
-            height: 100%;
-        }
-    }
-}
-
-// sticky footer for full-width
-
-main {
-    min-height: 400px;
-    padding: 2em 0 4em;
-}
-
-@media (min-width: $grid-float-breakpoint) {
-    html {
-        position: relative;
-        min-height: 100%;
-    }
-    body {
-        margin-bottom: 71px;
-    }
-    .footer-wrapper {
-        position: absolute;
-        bottom: 0;
-        height: 71px;
-        width: 100%;
-    }
-}
-
-// end sticky footer
-
 .resultsnum {
     font-size: 1em;
     color: #666;
+    float: left;
+    margin-right: 20px;
     .s-query {
         font-weight: bold;
         color: #222;
@@ -679,14 +310,14 @@ body.book {
         text-decoration: none;
         color: darken($brand-primary, 4%);
         &:hover {
-             color: lighten($brand-primary, 4%);
+            color: lighten($brand-primary, 4%);
             // box-shadow: inset 0 0 20px $brand-secondary-bright;
        
         }
     }
     .yui3-paginator-current-page {
         color: #fff;
-        background-color:  darken($brand-primary, 4%);
+        background-color: darken($brand-primary, 4%);
         // border-color: darken($brand-secondary-bright, 5%);
         // box-shadow: inset 0 0 20px gold;
         cursor: default;
@@ -700,7 +331,7 @@ body.book {
 /** Elements that are not meant to be seen until io its loading */
 .io-loading {
     .resultsnum,
-    #browse-select, #YUItabs, .filters, .pagination {
+    #browse-select, #YUItabs, .filters, .pagination, .footer-wrapper {
         position: absolute !important;
         height: 1px;
         width: 1px;
@@ -727,7 +358,7 @@ body.book {
     }
 }
 
-@import "bubbling";
+@import "partials/bubbling";
 
 .hiddenSiblings {
     display: none;
@@ -736,6 +367,15 @@ body.book {
 
 /* make it red instead (with with same width and style) */
 select:active, select:hover, select:focus {
-    outline-color: gold !important;
+    outline-color: $glowycolor !important;
     // box-shadow: 0 0 5px #FDAA29;
 }
+
+:focus {
+    outline: $input-border-focus auto 5px;
+    outline-color: $input-border-focus;
+    outline-style: auto;
+    outline-width: 5px;
+}
+
+@import "partials/footer";
