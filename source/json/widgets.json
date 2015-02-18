@@ -7,6 +7,12 @@
         "url" : "http://www.nyu.edu/library/bobst/research/fales/"            
       },
       {
+        "id" : "sochum",
+        "name" : "Social Science & Humanities Department",
+        "logo" : "",
+        "url" : "http://www.nyu.edu/library/bobst/research/fales/"            
+      },
+      {
         "id" : "dlts",
         "name" : "DIGITAL LIBRARY TECHNOLOGY SERVICES",
         "logo" : "",
