@@ -1,6 +1,6 @@
 
-$color-light: #ECDCC8;
-$color-dark: #ECDCC8;
+$color-dark: #74A2BD;
+$color-light: #F9F1E7;
 
 .bubblingG {
     text-align: center;
@@ -55,14 +55,14 @@ $color-dark: #ECDCC8;
     0% {
         width: 10px;
         height: 10px;
-        background-color: $color-light;
+        background-color: $color-dark;
         -moz-transform: translateY(0);
     }
 
     100% {
         width: 24px;
         height: 24px;
-        background-color: $color-dark;
+        background-color: $color-light;
         -moz-transform: translateY(-21px);
     }
 }
@@ -71,14 +71,14 @@ $color-dark: #ECDCC8;
     0% {
         width: 10px;
         height: 10px;
-        background-color: $color-light;
+        background-color: $color-dark;
         -webkit-transform: translateY(0);
     }
 
     100% {
         width: 24px;
         height: 24px;
-        background-color: $color-dark;
+        background-color: $color-light;
         -webkit-transform: translateY(-21px);
     }
 }
@@ -87,14 +87,14 @@ $color-dark: #ECDCC8;
     0% {
         width: 10px;
         height: 10px;
-        background-color: $color-light;
+        background-color: $color-dark;
         -ms-transform: translateY(0);
     }
 
     100% {
         width: 24px;
         height: 24px;
-        background-color: $color-dark;
+        background-color: $color-light;
         -ms-transform: translateY(-21px);
     }
 }
@@ -103,14 +103,14 @@ $color-dark: #ECDCC8;
     0% {
         width: 10px;
         height: 10px;
-        background-color: $color-light;
+        background-color: $color-dark;
         -o-transform: translateY(0);
     }
 
     100% {
         width: 24px;
         height: 24px;
-        background-color: $color-dark;
+        background-color: $color-light;
         -o-transform: translateY(-21px);
     }
 }
@@ -119,14 +119,14 @@ $color-dark: #ECDCC8;
     0% {
         width: 10px;
         height: 10px;
-        background-color: $color-light;
+        background-color: $color-dark;
         transform: translateY(0);
     }
 
     100% {
         width: 24px;
         height: 24px;
-        background-color: $color-dark;
+        background-color: $color-light;
         transform: translateY(-21px);
     }
 }
@@ -136,7 +136,7 @@ $color-dark: #ECDCC8;
     visibility: hidden;
 }
 
-.io-loading .bubblingG {
+.book.io-loading .bubblingG {
     display: block;
     visibility: visible;
     z-index: 9999;
