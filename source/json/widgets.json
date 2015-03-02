@@ -8,41 +8,30 @@
       },
       {
         "id" : "sochum",
-        "name" : "Social Science & Humanities Department",
+        "name" : "Social Sciences and Humanities Department",
         "logo" : "",
-        "url" : "http://www.nyu.edu/library/bobst/research/fales/"            
+        "url" : "http://guides.nyu.edu/cat.php?cid=20969"            
+      },
+      {
+        "id" : "nyuad",
+        "name" : "NYU Abu Dhabi",
+        "ltitle" : "NYU Abu Dhabi",
+        "logo" : "",
+        "url" : "http://nyuad.nyu.edu/"      
       },
       {
         "id" : "dlts",
-        "name" : "DIGITAL LIBRARY TECHNOLOGY SERVICES",
+        "name" : "Digital Library Technology Services",
         "logo" : "",
-        "url" : "http://www.nyu.edu/"      
+        "url" : "http://dlib.nyu.edu/dlts/"      
       }
     ],
-    "subjects" : {
-      "en" : {
-        "title" : "Filter by subject",
-        "sourceType" : "json",
-        "source" : "source/json/datasources/subject.json"
-      }
-    },
     "featuredSubjects" : {
       "en" : {
         "title" : "Featured Subjects",
         "sourceType" : "local",
         "data": [
-            {
-                "tid" : "hadith",
-                "term" : "Hadith-- Dictionaries"
-            },
-            {
-                "tid" : "arabic_language",
-                "term" : "Arabic language-- Dictionaries"
-            },
-            {
-                "tid" : "homer",
-                "term" : "Homer"
-            },
+            
             {
                 "tid" : "bustani",
                 "term" : "Bustānī"
