@@ -89,20 +89,7 @@
             }]
         }
     },
-    "subjects": {
-        "htmltitle": "Subjects",
-        "title": "Subjects",
-        "route": "/subjects/index.html",
-        "bodyClass": "subject",
-        "content": {
-            "body": [{
-                "title": "Filter by Subject",
-                "language_code": "en",
-                "language_dir": "ltr",
-                "widgets": ["subjects"]
-            }]
-        }
-    },
+   
     "about": {
         "htmltitle": "About",
         "title": [{
