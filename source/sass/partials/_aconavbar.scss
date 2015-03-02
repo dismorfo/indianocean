@@ -39,20 +39,7 @@
             border-color: $link-color;
         }
     }
-    // Nav dividers (deprecated with v3.0.1)
-    //
-    // This should have been removed in v3 with the dropping of `.nav-list`, but
-    // we missed it. We don't currently support this anywhere, but in the interest
-    // of maintaining backward compatibility in case you use it, it's deprecated.
-    .nav-divider {
-        @include nav-divider;
-    }
-    // Prevent IE8 from misplacing imgs
-    //
-    // See https://github.com/h5bp/html5-boilerplate/issues/984#issuecomment-3985989
-    > li > a > img {
-        max-width: none;
-    }
+   
 }
 
 //
@@ -138,25 +125,6 @@
 // Display the navbar across the entirety of the page or fixed it to the top or
 // bottom of the page.
 
-// Brand/project name
-
-.navbar-brand {
-    float: left;
-    padding: $navbar-padding-vertical $navbar-padding-horizontal;
-    font-size: $font-size-large;
-    line-height: $line-height-computed;
-    height: $navbar-height;
-    &:hover,
-    &:focus {
-        text-decoration: none;
-    }
-    @media (min-width: $grid-float-breakpoint) {
-        .navbar > .container &,
-        .navbar > .container-fluid & {
-            margin-left: -$navbar-padding-horizontal;
-        }
-    }
-}
 
 // Navbar toggle
 //
@@ -217,12 +185,13 @@
                 padding-bottom: $navbar-padding-vertical;
             }
         }
-        &.navbar-right {
-            float: right !important;
-        }
-        &.navbar-right:last-child {
-            margin-right: -$navbar-padding-horizontal;
-        }
+        // &.navbar-right {
+        //     background-color: fuchsia;
+        //     float: right !important;
+        // }
+        // &.navbar-right:last-child {
+        //     margin-right: -$navbar-padding-horizontal;
+        // }
     }
 }
 
@@ -253,6 +222,9 @@
         padding-top: 0;
         padding-bottom: 0;
         @include box-shadow(none);
+        &.navbar-right {
+            float: right;
+        }
         // Outdent the form if last child to line up with content down the page
         &.navbar-right:last-child {
             margin-right: -$navbar-padding-horizontal;
@@ -288,9 +260,6 @@
                 background-color: $navbar-default-link-disabled-bg;
             }
         }
-    }
-    // Dropdown menu items
-    .navbar-nav {
         // Remove background color from open dropdown
         > .open > a {
             &,
@@ -341,7 +310,7 @@ nav.navbar.navbar-default {
         }
         .navbar-toggle {
             border: none;
-            padding: 20px 20px 0px 20px;
+            padding: 15px 20px 0px 20px;
             margin-top: -60px;
             margin-bottom: 0px;
             background-color: transparent;

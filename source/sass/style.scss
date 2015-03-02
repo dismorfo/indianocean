@@ -11,7 +11,7 @@
 //@import "bootstrap/print";
 
 // Core CSS
-@import "bootstrap/scaffolding";
+@import "partials/scaffolding";
 
 // Components
 @import "bootstrap/component-animations";
@@ -23,13 +23,10 @@
 
 /*  End Bootstrap */
 /*  ********************* */
-/*  ********************* */
-/*  ********************* */
-/*  ********************* */
+
 /*  Start Indian Ocean Styles */
 
-//@import "compass";
-//@import "compass/css3/images";
+
 
 html {
     font-size: $font-size-base;
@@ -65,11 +62,7 @@ body {
     }
 }
 
-.filters {
-    // margin-top: -20px;
-    // margin-bottom: 10px;
-    float: left;
-}
+
 
 .flex-container {
     display: -ms-flexbox;
@@ -82,108 +75,6 @@ body {
     -webkit-justify-content: space-between;
     justify-content: space-between;
     -ms-flex-pack: justify;
-    .item {
-        -ms-flex: 0 1 32%;
-        -webkit-flex: 0 1 32%;
-        flex: 0 1 32%;
-        margin: 1% 0;
-        @media (max-width: 961px) {
-            -webkit-flex: 0 1 49%;
-            flex: 0 1 49%;
-            margin: 1% 0;
-        }
-        @media (max-width: $grid-float-breakpoint-max) {
-            -webkit-flex: 1 1 100%;
-            flex: 1 1 100%;
-            margin: 1% 0;
-        }
-        font-family: $font-family-serif;
-        /******* */
-        background-color: $navbar-default-bg;
-        @include box-shadow(rgba(#666, 0.3) 1px 1px 1px);
-        transition: .3s;
-        overflow: hidden;
-        /******* */
-        .md_label {
-            /* font-weight: bold; */
-            text-transform: uppercase;
-            /* display: block; */
-            font-family: "Open Sans";
-            font-size: .8em;
-        }
-        .md_title {
-            font-size: 1.1em;
-            line-height: 1.2;
-            font-family: $font-family-serif, serif;
-            margin: 0;
-            padding: 0 0 5px 0;
-            a, a:link, a:visited {
-                font-weight: normal;
-                color: black;
-                display: block;
-            }
-        }
-        .md_authors {
-            font-size: 1rem;
-            color: #666;
-            line-height: 1.1;
-            margin-bottom: .5em;
-        }
-        .md_author {
-            &::after {
-                content: ",\00a0";
-            }
-            &:last-child::after {
-                content: "";
-            }
-        }
-        .md_subject:link, .md_subject:visited {
-            display: inline-block;
-            margin-right: 5px;
-            font-weight: normal;
-            font-family: $font-family-sans-serif;
-            font-size: .9rem;
-            color: $brand-primary;
-            &:hover {
-                color: lighten($brand-primary, 7%);
-            }
-            &::after {
-                content: ",";
-            }
-        }
-        .md_subject:last-child::after {
-            content: "";
-        }
-        .md_provider {}
-        .thumbs {
-            width: 26%;
-            // max-width: 90px;
-            margin-right: 4%;
-            margin-left: -8px;
-            margin-top: -8px;
-            margin-bottom: 8px;
-            float: left;
-            /* elaborate ruse for cropping the thumbnails */
-            .clipper {
-                position: relative;
-                top: -10px;
-                overflow: hidden;
-                @include box-shadow(rgba(#666, 0.5) 1px 1px 5px);
-            }
-            a {
-                display: block;
-                position: relative;
-                top: 10px;
-                overflow: hidden;
-            }
-            img {
-                width: 120%;
-                height: auto;
-                margin-left: -10%;
-                margin-top: -10%;
-            }
-        }
-    }
     .itemdouble {
         -webkit-flex: 1 1 330px;
         flex: 1 1 330px;
@@ -203,6 +94,109 @@ body {
         padding: 0;
         box-shadow: none;
         margin: 0;
+    }
+}
+
+.item {
+    -ms-flex: 0 1 32%;
+    -webkit-flex: 0 1 32%;
+    flex: 0 1 32%;
+    margin: 1% 0;
+    @media (max-width: 961px) {
+        -webkit-flex: 0 1 49%;
+        flex: 0 1 49%;
+        margin: 1% 0;
+    }
+    @media (max-width: $grid-float-breakpoint-max) {
+        -webkit-flex: 1 1 100%;
+        flex: 1 1 100%;
+        margin: 1% 0;
+    }
+    font-family: $font-family-serif;
+    /******* */
+    background-color: $navbar-default-bg;
+    @include box-shadow(rgba(#666, 0.3) 1px 1px 1px);
+    transition: .3s;
+    overflow: hidden;
+    /******* */
+    .md_label {
+        /* font-weight: bold; */
+        text-transform: uppercase;
+        /* display: block; */
+        font-family: "Open Sans";
+        font-size: .8em;
+    }
+    .md_title {
+        font-size: 1.1em;
+        line-height: 1.2;
+        font-family: $font-family-serif, serif;
+        margin: 0;
+        padding: 0 0 5px 0;
+        a, a:link, a:visited {
+            font-weight: normal;
+            color: black;
+            display: block;
+        }
+    }
+    .md_authors {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.1;
+        margin-bottom: .5em;
+    }
+    .md_author {
+        &::after {
+            content: ",\00a0";
+        }
+        &:last-child::after {
+            content: "";
+        }
+    }
+    .md_subject:link, .md_subject:visited {
+        display: inline-block;
+        margin-right: 5px;
+        font-weight: normal;
+        font-family: $font-family-sans-serif;
+        font-size: .9rem;
+        color: $brand-primary;
+        &:hover {
+            color: lighten($brand-primary, 7%);
+        }
+        &::after {
+            content: ",";
+        }
+    }
+    .md_subject:last-child::after {
+        content: "";
+    }
+    .md_provider {}
+    .thumbs {
+        width: 26%;
+        // max-width: 90px;
+        margin-right: 4%;
+        margin-left: -8px;
+        margin-top: -8px;
+        margin-bottom: 8px;
+        float: left;
+        /* elaborate ruse for cropping the thumbnails */
+        .clipper {
+            position: relative;
+            top: -10px;
+            overflow: hidden;
+            @include box-shadow(rgba(#666, 0.5) 1px 1px 5px);
+        }
+        a {
+            display: block;
+            position: relative;
+            top: 10px;
+            overflow: hidden;
+        }
+        img {
+            width: 120%;
+            height: auto;
+            margin-left: -10%;
+            margin-top: -10%;
+        }
     }
 }
 
@@ -266,17 +260,6 @@ main {
         line-height: 1.2;
         font-family: $font-family-sans-serif;
         display: inline-block;
-    }
-}
-
-.resultsnum {
-    font-size: 1em;
-    color: #666;
-    float: left;
-    margin-right: 20px;
-    .s-query {
-        font-weight: bold;
-        color: #222;
     }
 }
 
@@ -372,10 +355,10 @@ select:active, select:hover, select:focus {
 }
 
 :focus {
-    outline: $input-border-focus auto 5px;
+    outline: $input-border-focus auto 3px;
     outline-color: $input-border-focus;
     outline-style: auto;
-    outline-width: 5px;
+    outline-width: 3px;
 }
 
 @import "partials/footer";

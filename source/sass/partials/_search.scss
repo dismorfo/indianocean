@@ -1,86 +1,66 @@
-[role="search"] {
-    input[type="submit"] {
-        text-align: center;
-        background: #ecdcc8 url(/indianocean/images/search-icon-2x.png) no-repeat center center;
-        background-size: auto 80%;
-        text-indent: -1000em;
-        border: 1px solid $brand-secondary3;
-        min-width: 2em;
-    }
-    input[type="text"] {
-        padding-left: 15px;
-        border: 1px solid $brand-secondary2;
-    }
+input[type="submit"] {
+  background: #ecdcc8 url(/indianocean/images/search-icon-2x.png) no-repeat center center;
+  background-size: auto 80%;
+  text-indent: -1000em;
+  border: 1px solid $brand-secondary3;
+  -ms-flex: 0 1 50px;
+  -webkit-flex: 0 1 50px;
+  flex: 0 1 50px;
+  height: 35px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  &:focus {
+    z-index: 1000;
+    outline-style: none;
+    outline-width: 0px;
+    background-color: darken(#ecdcc8, 8%);
+  }
 }
 
+input[type="text"] {
+  padding: 0 10px;
+  border: 1px solid $brand-secondary3;
+  height: 35px;
+  @include box-shadow(inset 0px 1px 1px rgba(0, 0, 0, 0.2));
+  -ms-flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  border-radius: 0px;
+  &:focus {
+    z-index: 1000;
+  }
+}
 
-.search_holder {
-    border: none;
-    @media (max-width: $grid-float-breakpoint-max) {
-        // mobile-friendly dropdown nav
-        padding: 10px 20px;
-        @include clearfix;
-        input[type="text"] {
-            width: 82%;
-            padding-left: 10px;
-            padding-right: 10px;
-            border: 1px solid $brand-secondary3;
-            height: 29px;
-            float: right;
-        }
-        input[type="submit"] {
-            width: 2em;
-            padding-left: 0;
-            padding-right: 0;
-            float: right;
-        }
-    }
-    @media (min-width: $grid-float-breakpoint) {
-        input[type="text"] {
-            width: 333px;
-            float: right;
-            height: 35px;
-            border-top: 1px solid $brand-secondary2;
-            border-left: 1px solid $brand-secondary2;
-            border-bottom: 1px solid $brand-secondary2;
-            border-right: none;
-            // -moz-border-radius: 0px;
-            // -webkit-border-radius: 0px;
-            // -khtml-border-radius: 0px;
-            // border-radius: 10% / 100%;
-            // compass mixin does not work with percentages?
-            //  @include border-radius(10% / 100%);
-            border-top-right-radius: 0em;
-            border-bottom-right-radius: 0em;
-            font-size: 1em;
-            margin-right: 0px;
-            color: #333;
-            // @include box-shadow(0px 0px 25px #fcf4ea, inset 0px 1px 1px rgba(0, 0, 0, 0.2));
-            @include box-shadow(inset 0px 1px 1px rgba(0, 0, 0, 0.2));
-        }
-        input[type="submit"] {
-            -webkit-transition: background .7s;
-            transition: background .7s;
-            float: right;
-            margin: 0px;
-            padding: 1px 5px;
-            height: 35px;
-            width: 50px;
-            font-weight: normal;
-            font-size: 1.1em;
-            line-height: 1;
-            letter-spacing: .025em;
-            text-shadow: #3f2706 1px 1px 2px;
-            // border-radius: 20px / 30px;
-            // border-top-left-radius: 0em;
-            // border-bottom-left-radius: 0px;
-            @include box-shadow(inset 0px 1px 1px rgba(0, 0, 0, 0.2));
-            /*  box-shadow: none;*/
-            text-indent: -1000em;
-            border-top: 1px solid $brand-secondary2;
-            border-right: 1px solid $brand-secondary2;
-            border-bottom: 1px solid $brand-secondary2;
-            border-left: none;
-        }
-    }
+[role="search"] {
+  margin: 0 15px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+  // width: 100%;
+  @media (min-width: $grid-float-breakpoint) {
+    width: 435px;
+    margin: 0;
+  }
+}
+
+.filters {
+  float: right;
+}
+
+.resultsnum {
+  font-size: 1em;
+  color: #666;
+  float: left;
+  margin-right: 20px;
+  .s-query, .start, .docslength, .numfound {
+    font-weight: bold;
+  }
 }
