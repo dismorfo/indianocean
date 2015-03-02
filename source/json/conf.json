@@ -1,11 +1,11 @@
 {
-    "appName": "Indian Ocean",
+    "appName": "Indian Ocean Digital Collection",
     "environment" : "local",
     "development" : {
         "appUrl": "http://dev-dl-pa.home.nyu.edu/indianocean",
         "appRoot": "/indianocean",
         "sass" : {
-            "build" : "external"
+            "build" : "internal"
           , "options" : {
                 "style" : "compressed"
               , "debugInfo" : false
@@ -16,14 +16,6 @@
             "recentlyAddedTitles" : {
                 "src" : "http://dev-discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select?wt=json&fq=hash:iy26sh&fq=ss_collection_identifier:d72398c3-1cd7-4734-ab1c-3e3b29862cee&fl=ss_embedded,title,type,ss_collection_identifier,ss_identifer,ss_thumbnail,sm_author,ss_title, ss_language,ss_pubdate,ss_publocation,sm_publisher,sm_subject,sm_partner&rows=12&&sort=ds_changed%20desc",
                 "dest" : "source/json/datasources/recentlyAddedTitles.json"
-            },
-            "subject" : {
-        	    "src" : "http://discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select?wt=json&fq=hash:iy26sh&fq=ss_collection_identifier:d72398c3-1cd7-4734-ab1c-3e3b29862cee&rows=0&facet=true&facet.field=im_field_subject",
-                "dest" : "source/json/datasources/subject.json"
-            },
-            "drupalSubjecs" : {
-               "src" : "http://alpha-user:dlts2010@dev-dl-pa.home.nyu.edu/books/sources/field/field_subject",
-        	   "dest" : "source/json/datasources/subjectsList.json"
             }
         }
     },
@@ -42,15 +34,6 @@
             "recentlyAddedTitles" : {
                 "src" : "http://dev-discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select?wt=json&fq=hash:iy26sh&fq=ss_collection_identifier:d924e139-2636-4e30-95fd-4115c2e41b96&fq=!ss_language:ar&fl=ss_embedded,title,type,ss_collection_identifier,ss_identifer,ss_thumbnail,sm_author,ss_title, ss_language,ss_pubdate,ss_publocation,sm_publisher,sm_subject,sm_partner&rows=12&&sort=ds_changed%20desc",
                 "dest" : "source/json/datasources/recentlyAddedTitles.json"
-            },
-           
-            "subject" : {
-        	    "src" : "http://discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select?wt=json&fq=hash:iy26sh&fq=ss_collection_identifier:d72398c3-1cd7-4734-ab1c-3e3b29862cee&rows=0&facet=true&facet.field=im_field_subject",
-                "dest" : "source/json/datasources/subject.json"
-            },
-            "drupalSubjecs" : {
-               "src" : "http://dlib.nyu.edu/books/sources/field/field_subject",
-        	   "dest" : "source/json/datasources/subjectsList.json"
             }
         }      
     },
