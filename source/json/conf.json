@@ -1,6 +1,6 @@
 {
     "appName": "Indian Ocean Digital Collection",
-    "environment" : "local",
+    "environment" : "development",
     "development" : {
         "appUrl": "http://dev-dl-pa.home.nyu.edu/indianocean",
         "appRoot": "/indianocean",
