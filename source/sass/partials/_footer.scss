@@ -65,21 +65,20 @@
   }
 }
 
-
 @media (min-width: $grid-float-breakpoint) {
   // sticky footer for full-width
   html {
     position: relative;
     min-height: 100%;
   }
-  body {
+  body.search {
     margin-bottom: 97px;
-  }
-  .footer-wrapper {
-    position: absolute;
-    bottom: 0;
-    height: 97px;
-    width: 100%;
+    .footer-wrapper {
+      position: absolute;
+      bottom: 0;
+      height: 97px;
+      width: 100%;
+    }
   }
 }
 
