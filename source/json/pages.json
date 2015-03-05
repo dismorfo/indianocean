@@ -22,7 +22,6 @@
             }],
            
             "items": {
-                "source": "http://discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select",
                 "rows": 12,
                 "fl": [
                     "ss_thumbnail", "ss_identifer", "ss_title", "sm_author", "sm_author", "sm_publisher", "ss_pubdate", "sm_partner", "sm_subject", "ss_publocation", "sm_partner", "sm_field_publication_location"
@@ -54,7 +53,6 @@
         "bodyClass": "browse io-loading",
         "content": {
             "items": {
-                "source": "http://discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select",
                 "rows": 12,
                 "fl": [
                     "ss_thumbnail", "ss_identifer", "ss_title", "sm_author", "sm_publisher", "ss_spublisher", "ss_pubdate", "sm_partner", "sm_subject", "ss_publocation", "sm_field_publication_location"
@@ -131,7 +129,6 @@
         "bodyClass": "search io-loading",
         "content": {
             "items": {
-                "source": "http://discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select",
                 "rows": 12,
                 "fl": [
                     "ss_thumbnail", "ss_identifer", "ss_title", "sm_author", "sm_publisher", "ss_pubdate", "sm_partner", "sm_subject",  "ss_publocation", "sm_field_publication_location", "score", "ss_longlabel"
@@ -150,8 +147,8 @@
         "htmltitle": "Book",
         "title": "Book",
         "bodyClass": "book",
-        "bookTheme": "aco",
-        "sourceUrl": "http://dlib.nyu.edu/books/",
+        "sourceUrlP": "http://dlib.nyu.edu/books/",
+        "sourceUrl": "http://dev-dl-pa.home.nyu.edu/books",
         "route": "/book/index.html"
     }
 }

@@ -4,6 +4,8 @@
     "development" : {
         "appUrl": "http://dev-dl-pa.home.nyu.edu/indianocean",
         "appRoot": "/indianocean",
+          "discoUrl": "http://dev-discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select/",
+     
         "sass" : {
             "build" : "internal"
           , "options" : {
@@ -22,6 +24,7 @@
     "local" : {
         "appUrl" : "http://localhost/indianocean",
         "appRoot" : "/indianocean",
+        "discoUrl": "http://dev-discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select/",
         "sass" : {
             "build" : "external"
           , "options" : {
@@ -40,6 +43,7 @@
     "production" : {
         "appUrl": "http://dlib.nyu.edu/indianocean",
         "appRoot": "/indianocean",
+        "discoUrl": "http://discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select/",
         "sass" : {
             "build" : "inline"
           , "options" : {

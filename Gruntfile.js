@@ -110,7 +110,7 @@ module.exports = function( grunt ) {
             source.menus = menus;
 
             source.appRoot = conf[environment].appRoot;  
-            
+            source.discoUrl = conf[environment].discoUrl; 
             source.discovery = conf.discovery;
 
             source.appName = conf.appName;
