@@ -9,18 +9,14 @@
         <h2  class="page-title" >{{{html}}}</h2>
       {{/title}}
 
-        <div class="resultsnum">Showing results <span class="start"></span> - <span class="docslength"></span> of <span class="numfound"></span></div>
+      <div class="resultsnum">Showing results <span class="start"></span> - <span class="docslength"></span> of <span class="numfound"></span></div>
         
       <div class="filters">
-     
-       <select id="browse-select">
-        <option data-sort-dir="asc" value="ss_longlabel" selected>Sort by Title</option>
-        <option data-sort-dir="asc" value="ss_sauthor">Sort by Author</option>
-        <option data-sort-dir="asc" value="ss_ssubject">Sort by Subject</option>
-        <option data-sort-dir="asc" value="ss_publocation">Sort by Place</option>
-      </select>
-    </div>
-    
+        <select id="browse-select">
+          <option data-sort-dir="asc" value="ss_sauthor" selected>Sort by Author</option>
+          <option data-sort-dir="asc" value="iass_longlabel" >Sort by Title</option>
+        </select>
+      </div>
     </header>
     {{#content}}
       {{#items}}
