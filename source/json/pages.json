@@ -30,8 +30,8 @@
                     "filter": "hash",
                     "value": "iy26sh"
                 }, {
-                    "filter": "ss_collection_identifier",
-                    "value": "d924e139-2636-4e30-95fd-4115c2e41b96"
+                    "filter": "sm_collection_code",
+                    "value": "io"
                 }]
             }
         }
@@ -61,8 +61,8 @@
                     "filter": "hash",
                     "value": "iy26sh"
                 }, {
-                    "filter": "ss_collection_identifier",
-                    "value": "d924e139-2636-4e30-95fd-4115c2e41b96"
+                    "filter": "sm_collection_code",
+                   "value": "io"
                 }]
             }
         }
@@ -137,8 +137,33 @@
                     "filter": "hash",
                     "value": "iy26sh"
                 }, {
-                    "filter": "ss_collection_identifier",
-                    "value": "d924e139-2636-4e30-95fd-4115c2e41b96"
+                    "filter": "sm_collection_code",
+                    "value": "io"
+                }]
+            }
+        }
+    },
+    "subject": {
+        "htmltitle": "Subject",
+        "title": [{
+           "html": "Search Results"
+        }],
+        "route": "/subject/index.html",
+        "bodyClass": "search io-loading",
+        "content": {
+            "items": {
+                "rows": 12,
+                "fl": [
+                    "ss_thumbnail", "ss_identifer", "ss_title", "sm_author", "sm_publisher", "ss_pubdate", "sm_partner", "sm_subject",  "ss_publocation", "sm_field_publication_location", "score", "ss_longlabel"
+                ],
+                "fq": [{
+                    "filter": "hash",
+                    "value": "iy26sh"
+                },
+                
+                 {
+                    "filter": "sm_collection_code",
+                    "value": "io"
                 }]
             }
         }
