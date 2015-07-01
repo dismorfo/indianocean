@@ -191,13 +191,7 @@ module.exports = function( grunt ) {
 
   }
   
-  function curlConfiguration () {
 
-      var conf = grunt.file.readJSON( __dirname + '/source/json/conf.json');
-      
-      return conf[conf.environment].curl;
-      
-  }
   
   function sassConfiguration () {
 
@@ -287,7 +281,6 @@ module.exports = function( grunt ) {
   // Project configuration.
     grunt.initConfig({
         pkg : grunt.file.readJSON('package.json')
-      , curl : curlConfiguration()
       , clean : cleanConfiguration()
       , copy : copyConfiguration()
       , uglify : uglifyConfiguration()
@@ -295,8 +288,7 @@ module.exports = function( grunt ) {
       , watch : watchConfiguration()
     });
   
-    grunt.loadNpmTasks('grunt-curl');
-  
+
     grunt.loadNpmTasks('grunt-contrib-jshint');
 
     grunt.loadNpmTasks('grunt-contrib-clean');
@@ -362,6 +354,6 @@ module.exports = function( grunt ) {
 
     });
 
-    grunt.registerTask('default', ['clean', 'copy', 'curl', 'massageDataSource', 'uglify', 'sass', 'writeHTML']);
+    grunt.registerTask('default', ['clean', 'copy', 'massageDataSource', 'uglify', 'sass', 'writeHTML']);
 
 };
