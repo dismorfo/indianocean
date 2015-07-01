@@ -115,6 +115,10 @@ module.exports = function( grunt ) {
 
             source.appName = conf.appName;
             
+            source.appOGDescription = conf.appOGDescription; 
+            source.appOGUrl = conf.appOGUrl;
+            source.appOGImage = conf.appOGImage;
+             
             source.appUrl = conf[environment].appUrl;
             
             source.partners = widgets.partners;  
