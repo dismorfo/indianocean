@@ -15,6 +15,7 @@
     "grunt-contrib-uglify": "^0.5.1",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-curl": "^2.0.3",
+    "handlebars": "^3.0.1",
     "hogan": "^1.0.2",
     "request": "^2.45.0",
     "underscore": "^1.7.0"
@@ -22,9 +23,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
- 
-  "author": "",
+  "author": "NYU Digital Library Technology Services",
   "license": "ISC",
- 
-  "homepage": "http://dlib.nyu.edu/indianocean/"
+  "homepage": "http://dlib.nyu.edu/indianocean/",
+  "dependencies": {
+    "html-entities": "^1.1.2",
+    "html-minifier": "^0.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NYULibraries/indianocean.git"
+  }
+
 }
