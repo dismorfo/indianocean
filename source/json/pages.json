@@ -172,8 +172,8 @@
         "htmltitle": "Book",
         "title": "Book",
         "bodyClass": "book",
-        "sourceUrlP": "http://dlib.nyu.edu/books/",
-        "sourceUrl": "http://dev-dl-pa.home.nyu.edu/books",
+        "sourceUrlP": "http://sites.dlib.nyu.edu/viewer/",
+        "sourceUrl": "http://sites.dlib.nyu.edu/viewer",
         "route": "/book/index.html"
     }
 }

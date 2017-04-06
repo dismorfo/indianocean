@@ -2,7 +2,7 @@
     "appName": "Indian Ocean Digital Collection",
     "environment" : "local",
     "development" : {
-        "appUrl": "http://dev-dl-pa.home.nyu.edu/indianocean",
+        "appUrl": "http://devweb1.dlib.nyu.edu/indianocean",
         "appRoot": "/indianocean",
         "discoUrl": "http://dev-discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select/",
      
