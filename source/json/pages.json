@@ -24,11 +24,11 @@
             "items": {
                 "rows": 12,
                 "fl": [
-                    "ss_thumbnail", "ss_identifer", "ss_title", "sm_author", "sm_author", "sm_publisher", "ss_pubdate", "sm_partner", "sm_subject", "ss_publocation", "sm_partner", "sm_field_publication_location"
+                    "ss_representative_image", "ss_identifer", "ss_title", "sm_author", "sm_author", "sm_publisher", "ss_pubdate", "sm_partner", "sm_subject", "ss_publocation", "sm_partner", "sm_field_publication_location"
                 ],
                 "fq": [{
                     "filter": "hash",
-                    "value": "iy26sh"
+                    "value": "705lna"
                 }, {
                     "filter": "sm_collection_code",
                     "value": "io"
@@ -55,11 +55,11 @@
             "items": {
                 "rows": 12,
                 "fl": [
-                    "ss_thumbnail", "ss_identifer", "ss_title", "sm_author", "sm_publisher", "ss_spublisher", "ss_pubdate", "sm_partner", "sm_subject", "ss_publocation", "sm_field_publication_location"
+                    "ss_representative_image", "ss_identifer", "ss_title", "sm_author", "sm_publisher", "ss_spublisher", "ss_pubdate", "sm_partner", "sm_subject", "ss_publocation", "sm_field_publication_location"
                 ],
                 "fq": [{
                     "filter": "hash",
-                    "value": "iy26sh"
+                    "value": "705lna"
                 }, {
                     "filter": "sm_collection_code",
                    "value": "io"
@@ -131,11 +131,11 @@
             "items": {
                 "rows": 12,
                 "fl": [
-                    "ss_thumbnail", "ss_identifer", "ss_title", "sm_author", "sm_publisher", "ss_pubdate", "sm_partner", "sm_subject",  "ss_publocation", "sm_field_publication_location", "score", "ss_longlabel"
+                    "ss_representative_image", "ss_identifer", "ss_title", "sm_author", "sm_publisher", "ss_pubdate", "sm_partner", "sm_subject",  "ss_publocation", "sm_field_publication_location", "score", "ss_longlabel"
                 ],
                 "fq": [{
                     "filter": "hash",
-                    "value": "iy26sh"
+                    "value": "705lna"
                 }, {
                     "filter": "sm_collection_code",
                     "value": "io"
@@ -154,11 +154,11 @@
             "items": {
                 "rows": 12,
                 "fl": [
-                    "ss_thumbnail", "ss_identifer", "ss_title", "sm_author", "sm_publisher", "ss_pubdate", "sm_partner", "sm_subject",  "ss_publocation", "sm_field_publication_location", "score", "ss_longlabel"
+                    "ss_representative_image", "ss_identifer", "ss_title", "sm_author", "sm_publisher", "ss_pubdate", "sm_partner", "sm_subject",  "ss_publocation", "sm_field_publication_location", "score", "ss_longlabel"
                 ],
                 "fq": [{
                     "filter": "hash",
-                    "value": "iy26sh"
+                    "value": "705lna"
                 },
                 
                  {

@@ -184,7 +184,7 @@ YUI().use(
           , sortBy = 'ss_longlabel'
           , sortDir = 'asc'          
           , language = 'en'
-          , discoveryURL = "http://dev-discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select"
+          , discoveryURL = "http://dev-discovery.dlib.nyu.edu:8080/solr3_discovery/drupal/select"
           , fl = [ 
                    'ss_embedded'
                  , 'title'
