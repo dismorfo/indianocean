@@ -24,7 +24,7 @@
             "items": {
                 "rows": 12,
                 "fl": [
-                    "ss_representative_image", "ss_identifer", "ss_title", "sm_author", "sm_author", "sm_publisher", "ss_pubdate", "sm_partner", "sm_subject", "ss_publocation", "sm_partner", "sm_field_publication_location"
+                    "ss_representative_image", "ss_book_identifier", "ss_title", "sm_author", "sm_author", "sm_publisher", "ss_pubdate", "sm_collection_partner_label", "sm_subject_label", "ss_publocation", "sm_collection_partner_label", "sm_field_publication_location"
                 ],
                 "fq": [{
                     "filter": "hash",
@@ -55,7 +55,7 @@
             "items": {
                 "rows": 12,
                 "fl": [
-                    "ss_representative_image", "ss_identifer", "ss_title", "sm_author", "sm_publisher", "ss_spublisher", "ss_pubdate", "sm_partner", "sm_subject", "ss_publocation", "sm_field_publication_location"
+                    "ss_representative_image", "ss_book_identifier", "ss_title", "sm_author", "sm_publisher", "ss_spublisher", "ss_pubdate", "sm_collection_partner_label", "sm_subject_label", "ss_publocation", "sm_field_publication_location"
                 ],
                 "fq": [{
                     "filter": "hash",
@@ -131,7 +131,7 @@
             "items": {
                 "rows": 12,
                 "fl": [
-                    "ss_representative_image", "ss_identifer", "ss_title", "sm_author", "sm_publisher", "ss_pubdate", "sm_partner", "sm_subject",  "ss_publocation", "sm_field_publication_location", "score", "ss_longlabel"
+                    "ss_representative_image", "ss_book_identifier", "ss_title", "sm_author", "sm_publisher", "ss_pubdate", "sm_collection_partner_label", "sm_subject_label",  "ss_publocation", "sm_field_publication_location", "score", "ss_longlabel"
                 ],
                 "fq": [{
                     "filter": "hash",
@@ -154,7 +154,7 @@
             "items": {
                 "rows": 12,
                 "fl": [
-                    "ss_representative_image", "ss_identifer", "ss_title", "sm_author", "sm_publisher", "ss_pubdate", "sm_partner", "sm_subject",  "ss_publocation", "sm_field_publication_location", "score", "ss_longlabel"
+                    "ss_representative_image", "ss_book_identifier", "ss_title", "sm_author", "sm_publisher", "ss_pubdate", "sm_collection_partner_label", "sm_subject_label",  "ss_publocation", "sm_field_publication_location", "score", "ss_longlabel"
                 ],
                 "fq": [{
                     "filter": "hash",
