@@ -184,7 +184,7 @@ YUI().use(
           , sortBy = 'ss_longlabel'
           , sortDir = 'asc'          
           , language = 'en'
-          , discoveryURL = "http://dev-discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select"
+          , discoveryURL = "http://discovery.dlib.nyu.edu:8080/solr3_discovery/viewer/select"
           , fl = [ 
                    'ss_embedded'
                  , 'title'
@@ -238,7 +238,7 @@ YUI().use(
                            + "?"
                            + "wt=json"
                            + "&json.wrf=callback={callback}"
-                           + "&fq=hash:iy26sh"
+                           + "&fq=hash:705lna"
                            + "&fq=ss_collection_identifier:d72398c3-1cd7-4734-ab1c-3e3b29862cee"
                            + "&fq=ss_language:" + language                           
                            + "&fl=" + fl.join()

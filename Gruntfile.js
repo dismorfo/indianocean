@@ -7,7 +7,7 @@ module.exports = function( grunt ) {
        
         try {
 
-            var hogan = require('hogan')
+            var hogan = require('hogan.js')
               , conf = grunt.file.readJSON( __dirname + '/source/json/conf.json')
               , pages = grunt.file.readJSON( __dirname + '/source/json/pages.json')
               , widgets = grunt.file.readJSON(__dirname + '/source/json/widgets.json')
@@ -273,7 +273,7 @@ module.exports = function( grunt ) {
 	  return {
 	      options : {
 	        banner : '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
-	        compress : true,
+	        compress : {},
 	        preserveComments : false
 	      },
 	      my_target: {
