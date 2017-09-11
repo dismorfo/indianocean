@@ -254,6 +254,7 @@ YUI().use(
                + "?"
                + "wt=json"
                + "&json.wrf=callback={callback}"
+               + "q=*"
                + "&fl=" + fl
                + "&fq=" + fq.join("&fq=")
                + "&rows=" + rows

@@ -2,9 +2,9 @@
     "appName": "Indian Ocean Digital Collection",
     "environment" : "local",
     "development" : {
-        "appUrl": "http://dev-dl-pa.home.nyu.edu/indianocean",
+        "appUrl": "http://devweb1.dlib.nyu.edu/indianocean",
         "appRoot": "/indianocean",
-        "discoUrl": "http://dev-discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select/",
+        "discoUrl": "http://dev-discovery.dlib.nyu.edu:8983/solr/viewer/select/",
      
         "sass" : {
             "build" : "internal"
@@ -18,7 +18,7 @@
     "local" : {
         "appUrl" : "http://localhost/indianocean",
         "appRoot" : "/indianocean",
-        "discoUrl": "http://dev-discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select/",
+        "discoUrl": "http://stagediscovery.dlib.nyu.edu:8983/solr/viewer/select/",
         "sass" : {
             "build" : "external"
           , "options" : {
@@ -31,7 +31,7 @@
     "production" : {
         "appUrl": "http://dlib.nyu.edu/indianocean",
         "appRoot": "/indianocean",
-        "discoUrl": "http://discovery.dlib.nyu.edu:8080/solr3_discovery/core0/select/",
+        "discoUrl": "http://discovery.dlib.nyu.edu:8983/solr/viewer/select/",
         "sass" : {
             "build" : "inline"
           , "options" : {
