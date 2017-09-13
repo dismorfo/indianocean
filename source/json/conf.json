@@ -14,8 +14,8 @@
             }
         }
     },
-    "local" : {
-        "appUrl" : "http://dlib.nyu.edu/indianocean",
+    "stage" : {
+        "appUrl" : "http://stageweb1.dlib.nyu.edu/indianocean",
         "appRoot" : "/indianocean",
         "discoUrl": "http://stagediscovery.dlib.nyu.edu:8983/solr/viewer/select/",
         "sass" : {
