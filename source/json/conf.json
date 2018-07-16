@@ -5,7 +5,7 @@
   {
     "appUrl": "http://localhost/indianocean",
     "appRoot": "/indianocean",
-    "discoUrl": "http://discovery.dlib.nyu.edu:8983/solr/viewer/select/",
+    "discoUrl": "http://stagediscovery.dlib.nyu.edu:8983/solr/viewer/select/",
     "sass":
     {
       "build": "external",
