@@ -16,7 +16,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-curl": "^2.0.3",
     "handlebars": "^3.0.1",
-    "hogan": "^1.0.2",
+    "hogan.js": "^3.0.2",
     "request": "^2.45.0",
     "underscore": "^1.7.0"
   },
