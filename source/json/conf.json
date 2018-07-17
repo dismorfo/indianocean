@@ -1,6 +1,6 @@
 {
   "appName": "Indian Ocean Digital Collection",
-  "environment": "local",
+  "environment": "stage",
   "local":
   {
     "appUrl": "http://localhost/indianocean",
@@ -40,12 +40,13 @@
     "discoUrl": "http://stagediscovery.dlib.nyu.edu:8983/solr/viewer/select/",
     "sass":
     {
-      "build": "external",
+      "build": "inline",
       "options":
       {
-        "style": "expanded",
+        "style": "compressed",
         "debugInfo": false,
-        "lineNumbers": false
+        "lineNumbers": false,
+        "sourcemap": "none"
       }
     }
   },
@@ -59,7 +60,8 @@
       "build": "inline",
       "options":
       {
-        "style": "compressed"
+        "style": "compressed",
+        "sourcemap": "none"
       }
     }
   }
