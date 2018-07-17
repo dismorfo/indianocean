@@ -1,5 +1,4 @@
 //Bootstrap
-
 // Core variables and mixins
 @import "bootstrap/variables";
 @import "partials/bootstrap-variables";
@@ -9,7 +8,6 @@
 @import "bootstrap/normalize";
 
 //@import "bootstrap/print";
-
 // Core CSS
 @import "partials/scaffolding";
 
@@ -21,8 +19,12 @@
 @import "partials/header";
 @import "partials/search";
 
+
 /*  End Bootstrap */
+
+
 /*  ********************* */
+
 
 /*  Start Indian Ocean Styles */
 
@@ -116,7 +118,7 @@ body {
   overflow: hidden;
 
   .md_label {
-   
+
     text-transform: uppercase;
     font-family: "Open Sans";
     font-size: .8em;
@@ -127,7 +129,9 @@ body {
     font-family: $font-family-serif, serif;
     margin: 0;
     padding: 0 0 5px 0;
-    a, a:link, a:visited {
+    a,
+    a:link,
+    a:visited {
       font-weight: normal;
       color: black;
       display: block;
@@ -144,7 +148,8 @@ body {
       content: ";\00a0";
     }
   }
-  .md_subject:link, .md_subject:visited {
+  .md_subject:link,
+  .md_subject:visited {
     //display: inline-block;
     margin-right: 5px;
     font-weight: bold;
@@ -160,8 +165,7 @@ body {
   }
   .md_provider {}
   .thumbs {
-    width: 26%;
-    // max-width: 90px;
+    width: 26%; // max-width: 90px;
     margin-right: 4%;
     margin-left: -8px;
     margin-top: -8px;
@@ -207,7 +211,8 @@ main {
   .maintext {
     max-width: 50em;
   }
-  a:link, a:focus {
+  a:link,
+  a:focus {
     font-weight: bold;
   }
   ul {
@@ -274,7 +279,9 @@ body.book {
   padding-left: 0;
   margin: 1em auto;
   width: auto;
-  .yui3-paginator-first, .yui3-paginator-next, .yui3-paginator-page {
+  .yui3-paginator-first,
+  .yui3-paginator-next,
+  .yui3-paginator-page {
     display: inline-block;
     padding: 5px;
     padding: 6px 12px;
@@ -282,15 +289,12 @@ body.book {
     text-decoration: none;
     color: darken($brand-primary, 4%);
     &:hover {
-      color: lighten($brand-primary, 4%);
-      // box-shadow: inset 0 0 20px $brand-secondary-bright;
-   
+      color: lighten($brand-primary, 4%); // box-shadow: inset 0 0 20px $brand-secondary-bright;
     }
   }
   .yui3-paginator-current-page {
     color: #fff;
-    background-color: darken($brand-primary, 4%);
-    // border-color: darken($brand-secondary-bright, 5%);
+    background-color: darken($brand-primary, 4%); // border-color: darken($brand-secondary-bright, 5%);
     // box-shadow: inset 0 0 20px gold;
     cursor: default;
     &:hover {
@@ -300,10 +304,16 @@ body.book {
   }
 }
 
+
 /** Elements that are not meant to be seen until finished loading */
+
 .io-loading {
   .resultsnum,
-  #browse-select, #YUItabs, .filters, .pagination, .footer-wrapper {
+  #browse-select,
+  #YUItabs,
+  .filters,
+  .pagination,
+  .footer-wrapper {
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -314,7 +324,8 @@ body.book {
 
 .items-no-results {
   .resultsnum,
-  #browse-select, .filters {
+  #browse-select,
+  .filters {
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -337,7 +348,9 @@ body.book {
   visibility: hidden;
 }
 
-select:active, select:hover, select:focus {
+select:active,
+select:hover,
+select:focus {
   outline-color: $glowycolor !important;
 }
 
