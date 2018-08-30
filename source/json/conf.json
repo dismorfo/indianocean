@@ -1,6 +1,6 @@
 {
   "appName": "Indian Ocean Digital Collection",
-  "environment": "stage",
+  "environment": "production",
   "local":
   {
     "appUrl": "http://localhost/indianocean",

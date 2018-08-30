@@ -1,7 +1,9 @@
 
 *.scssc
-build/*
+
 node_modules/*
 source/drupal/*
 design/*
 package-lock.json
+
+build/.htaccess
