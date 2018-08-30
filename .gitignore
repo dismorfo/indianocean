@@ -4,3 +4,4 @@ build/*
 node_modules/*
 source/drupal/*
 design/*
+package-lock.json

@@ -1,9 +1,11 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>{{> head }}</head>
 <body data-app="{{ appUrl }}" data-appRoot="{{ appRoot }}"   data-discoUrl="{{ discoUrl }}" class="{{ bodyClass }}">
   {{> header }}
   <iframe 
+    role="main"
+    title="Book Viewer" 
     class="widget book" 
     id="book" 
     name="book" 

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>{{> head }}</head>
 <body data-app="{{ appUrl }}" data-appRoot="{{ appRoot }}"  data-discoUrl="{{ discoUrl }}" class="{{ bodyClass }}">
   {{> header }}
@@ -12,7 +12,7 @@
       <div class="resultsnum">Showing results <span class="start"></span> - <span class="docslength"></span> of <span class="numfound"></span></div>
         
       <div class="filters">
-        <select id="browse-select">
+        <select id="browse-select" aria-label="Search Sort Results">
           <option data-sort-dir="asc" value="ss_sauthor" selected>Sort by Author</option>
           <option data-sort-dir="asc" value="iass_longlabel" >Sort by Title</option>
         </select>
