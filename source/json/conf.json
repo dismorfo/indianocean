@@ -1,11 +1,11 @@
 {
   "appName": "Indian Ocean Digital Collection",
-  "environment": "stage",
+  "environment": "production",
   "local":
   {
     "appUrl": "http://localhost/indianocean",
     "appRoot": "/indianocean",
-    "discoUrl": "http://stagediscovery.dlib.nyu.edu:8983/solr/viewer/select/",
+    "discoUrl": "http://stagediscovery.dlib.nyu.edu:8983/solr/viewer/select",
     "sass":
     {
       "build": "external",
@@ -21,7 +21,7 @@
   "development":  {
     "appUrl": "http://devweb1.dlib.nyu.edu/indianocean",
     "appRoot": "/indianocean",
-    "discoUrl": "http://dev-discovery.dlib.nyu.edu:8983/solr/viewer/select/",
+    "discoUrl": "http://dev-discovery.dlib.nyu.edu:8983/solr/viewer/select",
     "sass":
     {
       "build": "internal",
@@ -29,7 +29,8 @@
       {
         "style": "compressed",
         "debugInfo": false,
-        "lineNumbers": false
+        "lineNumbers": false,
+        "sourcemap": "none"
       }
     }
   },
@@ -37,7 +38,7 @@
   {
     "appUrl": "http://stageweb1.dlib.nyu.edu/indianocean",
     "appRoot": "/indianocean",
-    "discoUrl": "http://stagediscovery.dlib.nyu.edu:8983/solr/viewer/select/",
+    "discoUrl": "http://stagediscovery.dlib.nyu.edu:8983/solr/viewer/select",
     "sass":
     {
       "build": "inline",
@@ -54,7 +55,7 @@
   {
     "appUrl": "http://dlib.nyu.edu/indianocean",
     "appRoot": "/indianocean",
-    "discoUrl": "http://discovery.dlib.nyu.edu:8983/solr/viewer/select/",
+    "discoUrl": "http://discovery1.dlib.nyu.edu:8983/solr/viewer/select",
     "sass":
     {
       "build": "inline",
