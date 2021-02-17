@@ -73,7 +73,7 @@ export default {
   props: {
     api: {
       type: String,
-      default: 'http://localhost:9000/api/v1/search'
+      default: 'https://stage-sites.dlib.nyu.edu/viewer/api/v1/search'
     },
     searchTerm: {
       type: String,
